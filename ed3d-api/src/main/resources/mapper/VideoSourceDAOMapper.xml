@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.csu.ed3d.persistence.VideoSourceDAO">
+    <select id="findVideoSourceByVideoId" resultType="VideoSource">
+        select * from edu_videosource where videoId=#{id}
+    </select>
+</mapper>
